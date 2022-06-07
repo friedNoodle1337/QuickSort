@@ -66,8 +66,8 @@ void swap(unsigned int* a, unsigned int* b)
   *b = temp;
 }
 
-long int partition(std::vector< unsigned int >& arr, const long int& low, const long int& high) {
-
+long int partition(std::vector< unsigned int >& arr, const long int& low, const long int& high)
+{
   // select the rightmost element as pivot
   unsigned int pivot = arr[high];
 
@@ -80,7 +80,6 @@ long int partition(std::vector< unsigned int >& arr, const long int& low, const 
   {
     if (arr[j] <= pivot)
     {
-
       // if element smaller than pivot is found
       // swap it with the greater element pointed by i
       ++i;
